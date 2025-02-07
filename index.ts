@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 
 function getTemplates() {
-  return fs.readdirSync(path.join(__dirname, 'templates'));
+  return fs.readdirSync(path.join(import.meta.dirname, 'templates'));
 }
 
 function usage() {
@@ -20,7 +20,7 @@ function main() {
   }
 
   const template = process.argv[2];
-  const templateDir = path.resolve(__dirname, 'templates', template);
+  const templateDir = path.resolve(import.meta.dirname, 'templates', template);
   if (!fs.existsSync(templateDir)) {
     console.error(`Template ${template} not found`);
     process.exit(1);

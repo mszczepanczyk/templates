@@ -4,7 +4,7 @@
   "author": "Mariusz Szczepańczyk <m@mariusz.sh>",
   "homepage": "https://github.com/mszczepanczyk/templates",
   "repository": "https://github.com/mszczepanczyk/templates.git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "bin": {
     "create": "index.ts"
